@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nelton Cereals & Groceries - Premium B2B Agricultural Products</title>
+    <meta name="description" content="Leading supplier of premium cereals and legumes for businesses across Kenya. Clean, sorted, and certified agricultural products with reliable delivery.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%2316a34a'/%3E%3Ctext x='50' y='55' text-anchor='middle' fill='white' font-size='40' font-family='Arial'%3EN%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <div class="logo">
+                    <i class="fas fa-leaf"></i>
+                    <div>
+                        <h1>NELTON CEREALS</h1>
+                        <span class="tagline">Premium Agricultural Products</span>
+                    </div>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#products" class="nav-link">Products</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="search-btn" aria-label="Search products">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="inquiry-btn" aria-label="View inquiries">
+                    <i class="fas fa-phone"></i>
+                    <span class="inquiry-count">0</span>
+                </button>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Your Trusted Partner in <span class="highlight">Premium Agricultural Products</span></h1>
+                <p class="hero-subtitle">Leading supplier of certified cereals and legumes to businesses across Kenya. Clean, sorted, and quality-assured products with reliable delivery schedules.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Business Clients</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Tons Monthly</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <button class="cta-btn primary" onclick="scrollToSection('products')">
+                        <i class="fas fa-eye"></i> View Products
+                    </button>
+                    <button class="cta-btn secondary" onclick="scrollToSection('contact')">
+                        <i class="fas fa-phone"></i> Get Quote
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-placeholder">
+                    <i class="fas fa-seedling"></i>
+                    <p>Premium Agricultural Products</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Bar -->
+    <section class="certifications">
+        <div class="container">
+            <div class="cert-grid">
+                <div class="cert-item">
+                    <i class="fas fa-certificate"></i>
+                    <span>KEBS Certified</span>
+                </div>
+                <div class="cert-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Quality Assured</span>
+                </div>
+                <div class="cert-item">
+                    <i class="fas fa-truck"></i>
+                    <span>Reliable Delivery</span>
+                </div>
+                <div class="cert-item">
+                    <i class="fas fa-handshake"></i>
+                    <span>B2B Partnership</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Premium Products</h2>
+                <p>Carefully selected and processed cereals and legumes for your business needs</p>
+            </div>
+            
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="cereals">Cereals</button>
+                <button class="filter-btn" data-filter="legumes">Legumes</button>
+                <button class="filter-btn" data-filter="bulk">Bulk Orders</button>
+            </div>
+
+            <div class="products-grid" id="productsGrid">
+                <!-- Products loaded via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Nelton Cereals & Groceries</h2>
+                    <p class="about-intro">Established in 2019, Nelton Cereals & Groceries has grown to become a leading supplier of premium agricultural products to businesses across Kenya. We specialize in providing clean, sorted, and certified cereals and legumes to retailers, processors, and exporters.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <div>
+                                <h4>Quality Assurance</h4>
+                                <p>Every batch undergoes rigorous quality checks to ensure consistency and purity standards.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-network-wired"></i>
+                            <div>
+                                <h4>Supply Chain Excellence</h4>
+                                <p>Strong relationships with farmers and processors ensure consistent supply and competitive pricing.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Reliable Delivery</h4>
+                                <p>Timely delivery schedules that align with your business operations and inventory needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-warehouse"></i>
+                        <p>Modern Processing Facility</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Trusted by Leading Businesses</h2>
+                <p>See what our B2B partners say about working with us</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Nelton Cereals has been our reliable partner for 3 years. Their consistent quality and timely deliveries have helped us maintain our production schedules without interruption."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div>
+                            <h4>James Mwangi</h4>
+                            <span>Production Manager, Unga Ltd</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The quality of their green grams and beans is exceptional. We've been able to expand our export business thanks to their reliable supply and consistent grading standards."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div>
+                            <h4>Sarah Wanjiku</h4>
+                            <span>Export Director, AgriExport Kenya</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Their competitive pricing and flexible payment terms have made them our preferred supplier. The team is professional and always responsive to our needs."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div>
+                            <h4>David Kimani</h4>
+                            <span>Procurement Head, City Supermarkets</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get in Touch</h2>
+                <p>Ready to partner with us? Contact our team for quotes and business inquiries</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-phone-alt"></i>
+                        <h4>Phone</h4>
+                        <p>+254 742 646087</p>
+                        <small>Available Mon-Sat, 8AM-6PM</small>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Location</h4>
+                        <p>Eggs Depot, Off Thika Road<br>Nairobi, Kenya</p>
+                        <small>Visit us for product viewing</small>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p>info@neltoncereals.co.ke</p>
+                        <small>Response within 2 hours</small>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <i class="fas fa-clock"></i>
+                        <h4>Business Hours</h4>
+                        <p>Monday - Saturday<br>8:00 AM - 6:00 PM</p>
+                        <small>Closed on Sundays</small>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Request a Quote</h3>
+                    <form id="quoteForm">
+                        <div class="form-row">
+                            <input type="text" placeholder="Full Name *" required>
+                            <input type="email" placeholder="Email Address *" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="tel" placeholder="Phone Number *" required>
+                            <input type="text" placeholder="Company Name *" required>
+                        </div>
+                        <select required>
+                            <option value="">Select Product Interest *</option>
+                            <option value="white-maize">White Maize</option>
+                            <option value="yellow-maize">Yellow Maize</option>
+                            <option value="green-grams">Green Grams</option>
+                            <option value="kidney-beans">Red Kidney Beans</option>
+                            <option value="white-beans">White Beans</option>
+                            <option value="sorghum">Sorghum</option>
+                            <option value="millet">Millet</option>
+                            <option value="black-beans">Black Beans</option>
+                            <option value="rice">Rice</option>
+                        </select>
+                        <input type="number" placeholder="Quantity (kg) *" min="100" required>
+                        <textarea placeholder="Additional requirements or questions" rows="4"></textarea>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Send Quote Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-leaf"></i>
+                        <div>
+                            <h4>Nelton Cereals & Groceries</h4>
+                            <p>Premium Agricultural Products for Business</p>
+                        </div>
+                    </div>
+                    <p>Your trusted partner for quality cereals and legumes. We deliver excellence in every grain.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <a href="#products">White Maize</a>
+                    <a href="#products">Yellow Maize</a>
+                    <a href="#products">Green Grams</a>
+                    <a href="#products">Kidney Beans</a>
+                    <a href="#products">Sorghum</a>
+                    <a href="#products">Millet</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#products">Products</a>
+                    <a href="#about">About Us</a>
+                    <a href="#testimonials">Testimonials</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +254 742 646087</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Eggs Depot, Off Thika Road, Nairobi</p>
+                    <p><i class="fas fa-envelope"></i> info@neltoncereals.co.ke</p>
+                    <p><i class="fas fa-clock"></i> Mon-Sat: 8AM-6PM</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Nelton Cereals & Groceries. All rights reserved. | Designed for Business Excellence</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Inquiry Modal -->
+    <div class="modal" id="inquiryModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Your Inquiry</h3>
+            <div id="inquiryItems"></div>
+            <div class="inquiry-total">
+                <strong>Estimated Value: KSh <span id="inquiryTotal">0</span></strong>
+            </div>
+            <button class="submit-inquiry-btn" onclick="submitInquiry()">
+                <i class="fas fa-phone"></i> Call to Place Order
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
