@@ -727,6 +727,26 @@ body {
     background: var(--primary-green-dark);
 }
 
+/* Map Section */
+.map-section {
+    padding: var(--spacing-3xl) 0;
+    background: var(--neutral-light);
+}
+
+.map-container {
+    width: 100%;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: 0 8px 30px var(--shadow-medium);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    display: block;
+}
+
 /* Footer */
 .footer {
     background: var(--neutral-dark);
